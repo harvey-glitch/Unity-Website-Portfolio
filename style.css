@@ -1,0 +1,154 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  /*background: #111111;*/
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('your-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f7b733;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffa500;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* project card styles */
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* media inside project cards*/
+.project-card img,
+.project-card video {
+  width: 100%;
+  border-radius: 6px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* project github link button*/
+.project-link {
+  background-color: #f7b733;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background-color: #ffa500;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact a {
+  color: #f7b733;
+  text-decoration: none;
+}
